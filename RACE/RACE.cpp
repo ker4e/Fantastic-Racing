@@ -1,9 +1,9 @@
 ﻿#include <iostream>
 #include "TransportArr.h"
-#include "MainRace.h"
-#include "GroundRace.h"
-#include "AirRace.h"
-#include "MixedRace.h"
+#include "RaceType/MainRace.h"
+#include "RaceType/GroundRace.h"
+#include "RaceType/AirRace.h"
+#include "RaceType/MixedRace.h"
 
 
 int main() {

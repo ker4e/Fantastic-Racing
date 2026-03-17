@@ -14,21 +14,29 @@ project ("RACE")
 set(CMAKE_WINDOWS_EXPORT_ALL_SYMBOLS ON)
 add_library(RaceLib SHARED
 "Transport.cpp" 
-"GroundTransport.cpp" 
-"AirTransport.cpp" 
-"Camel.cpp" 
-"FastCamel.cpp" 
-"Centaur.cpp" 
-"AllTerrainBoots.cpp" 
-"MagicCarpet.cpp" 
-"Eagle.cpp" 
-"Broom.cpp" 
-"MainRace.cpp" 
-"GroundRace.cpp" 
-"AirRace.cpp" 
-"MixedRace.cpp"
+"Ground/GroundTransport.cpp" 
+"Air/AirTransport.cpp" 
+"Ground/Camel.cpp" 
+"Ground/FastCamel.cpp" 
+"Ground/Centaur.cpp" 
+"Ground/AllTerrainBoots.cpp" 
+"Air/MagicCarpet.cpp" 
+"Air/Eagle.cpp" 
+"Air/Broom.cpp" 
+"RaceType/MainRace.cpp" 
+"RaceType/GroundRace.cpp" 
+"RaceType/AirRace.cpp" 
+"RaceType/MixedRace.cpp"
 "TransportArr.cpp"
 )
+
+target_include_directories(RaceLib PUBLIC
+    ${CMAKE_CURRENT_SOURCE_DIR}
+    ${CMAKE_CURRENT_SOURCE_DIR}/Ground
+    ${CMAKE_CURRENT_SOURCE_DIR}/Air
+    ${CMAKE_CURRENT_SOURCE_DIR}/RaceType
+)
+
 target_compile_definitions(RaceLib PRIVATE RACE_LIB_EXPORTS)
 
 # Добавьте источник в исполняемый файл этого проекта.
