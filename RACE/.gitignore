@@ -1,0 +1,81 @@
+# Build directories
+
+build/
+Build/
+out/
+bin/
+lib/
+x64/
+x86/
+Debug/
+Release/
+cmake-build-*/
+
+# CMake
+
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+compile_commands.json
+CTestTestfile.cmake
+Makefile
+install_manifest.txt
+
+# Visual Studio
+
+.vs/
+*.vcxproj.user
+*.vcxproj.filters
+*.VC.db
+*.VC.opendb
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Object / binary files
+
+*.obj
+*.o
+*.lo
+*.la
+*.al
+*.dll
+*.exe
+*.out
+*.app
+*.lib
+*.exp
+*.pdb
+*.idb
+*.ilk
+
+# Logs
+
+*.log
+*.tlog
+
+# Precompiled headers
+
+*.pch
+*.ipch
+
+# Temporary files
+
+*.tmp
+*.temp
+*.cache
+*.bak
+*.swp
+
+# OS files
+
+.DS_Store
+Thumbs.db
+
+# Coverage / testing
+
+coverage/
+*.gcda
+*.gcno
+*.gcov
